@@ -5,12 +5,12 @@ import Card from "../../components/Card";
 import styled from "styled-components";
 
 
-const StyledCardContainer= styled.div`
-  display: flex;
-  flex-direction:row;
-  justify-content: center;
-  flex-wrap: wrap;
+const StyledContainer= styled.div`
   width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 `;
 
 const InfoPage = () => {
@@ -27,7 +27,7 @@ const InfoPage = () => {
   }, []);
 
   return (
-    <StyledCardContainer>      
+    <StyledContainer>      
       {infoCards &&
         infoCards.map((card, i) => {
           return (
@@ -39,7 +39,7 @@ const InfoPage = () => {
             />
           );
         })}
-    </StyledCardContainer>
+    </StyledContainer>
   );
 };
 

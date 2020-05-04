@@ -2,7 +2,6 @@ import React from 'react';
 import { Router} from "@reach/router";
 import HomePage from './pages/Home';
 import InfoPage from './pages/Info';
-import Rsvp from './pages/Rsvp';
 
 import Header from './components/Header';
 import Menu from './components/Menu';
@@ -18,7 +17,6 @@ function App() {
         <Router>
           <HomePage hide={true} path="/" />
           <InfoPage path="information" />
-          <Rsvp path="rsvp" />
         </Router>
       </Container>
       <Footer/>
