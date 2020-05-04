@@ -33,10 +33,6 @@ const Footer = () => {
         });
     }, []);
 
-    if (footer){
-        console.log(footer.fields.image.fields.file.url);
-    }
-
     return (
         <FooterStyled>
             {footer && 

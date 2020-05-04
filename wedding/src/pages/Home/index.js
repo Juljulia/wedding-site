@@ -1,8 +1,6 @@
 import React from "react";
 import client from "../../functions/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import Container from '../../components/Container';
-
 
 const HomePage = () => {
   const [content, setContent] = React.useState(null);
