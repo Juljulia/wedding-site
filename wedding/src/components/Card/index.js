@@ -5,7 +5,7 @@ import styled from "styled-components";
 const CardStyled = styled.div`
     margin: 10px;
     width: 400px;
-    height: 525px;
+    min-height: 525px;
     background-color: #FBFAF8;
     border-radius: 4px;
 
@@ -17,11 +17,12 @@ const CardStyled = styled.div`
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
       }
-      .text-content {
-        padding: 20px;
-        letter-spacing: 0.5px;
-        line-height: 24px;
-`;
+    .text-content {
+      padding: 20px;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
+  `;
 
 const Card = (props) => {
   return (
