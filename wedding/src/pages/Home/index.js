@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <div>
     {content && 
-      <div>
+      <div className="container">
         <div>
           <h2>{content.fields.title}</h2>
           {documentToReactComponents(content.fields.content)}

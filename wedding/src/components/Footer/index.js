@@ -4,7 +4,10 @@ import client from "../../functions/contentful";
 
 
 const FooterStyled = styled.footer`
-    height: 350px;
+
+    div {
+        height: 350px;
+    }
     
     img {
         width: 100%;

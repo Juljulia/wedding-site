@@ -16,7 +16,7 @@ a {
   color: #767573;
 }
 
-.frontimage {
+.front-image {
   width: 100%;
   object-fit: contain;
 }
@@ -28,7 +28,6 @@ a {
 
 @media (max-width: 650px) {
   .container {
-    width: 80%;
+    max-width: 90%;
   }
-
 }

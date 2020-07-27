@@ -4,12 +4,18 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Card from "../../components/Card";
 import styled from "styled-components";
 
-const StyledContainer = styled.div`
-  width: 1000px;
+const StyledCardContainer = styled.div`
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  margin: 0 auto;
+
+  @media (max-width: 650px) {
+  max-width: 650px;
+  }
+  
 `;
 
 const InfoPage = () => {
@@ -26,7 +32,7 @@ const InfoPage = () => {
   }, []);
 
   return (
-    <StyledContainer>      
+    <StyledCardContainer>      
       {infoCards &&
         infoCards.map((card, i) => {
           return (
@@ -38,7 +44,7 @@ const InfoPage = () => {
             />
           );
         })}
-    </StyledContainer>
+    </StyledCardContainer>
   );
 };
 

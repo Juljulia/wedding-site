@@ -1,11 +1,10 @@
 import React from 'react';
-import { Router} from "@reach/router";
+import { Router } from "@reach/router";
 import HomePage from './pages/Home';
 import InfoPage from './pages/Info';
 
 import Header from './components/Header';
 import Menu from './components/Menu';
-import Container from './components/Container';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,12 +12,12 @@ function App() {
     <div>
       <Header/>
       <Menu/>
-      <Container>
+      <div>
         <Router>
           <HomePage hide={true} path="/" />
           <InfoPage path="information" />
         </Router>
-      </Container>
+      </div>
       <Footer/>
     </div>
   );
