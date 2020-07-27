@@ -16,6 +16,19 @@ a {
   color: #767573;
 }
 
-/* .content {
+.frontimage {
+  width: 100%;
+  object-fit: contain;
+}
+
+.container {
+  max-width: 650px;
   margin: 0 auto;
-} */
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 80%;
+  }
+
+}
