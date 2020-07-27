@@ -11,10 +11,15 @@ const MenuStyled = styled.nav`
   margin-bottom: 10px;
 
   a {
-    padding: 0 10px;
+    margin: 0 10px;
     text-decoration: underline;
     text-transform: uppercase;
+  }
 
+  a:hover,
+  a:focus {
+    color: orange;
+    border: none;
   }
 `;
 
@@ -32,7 +37,7 @@ const Menu = () => {
     }, []);
 
     return (
-        <MenuStyled>
+      <MenuStyled>
       {pages &&
         pages.map((page, i) => {
           return (
@@ -43,7 +48,7 @@ const Menu = () => {
             </Link>
           );
         })}
-        </MenuStyled>
+      </MenuStyled>
     );
 };
 export default Menu;
