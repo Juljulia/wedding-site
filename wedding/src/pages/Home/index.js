@@ -17,12 +17,12 @@ const HomePage = () => {
     <div>
     {content && 
       <div>
-        <div className="content">
+        <div>
           <h2>{content.fields.title}</h2>
           {documentToReactComponents(content.fields.content)}
         </div>
 
-        <img src={content.fields.hero.fields.file.url} alt="heart"></img>
+        <img src={content.fields.hero.fields.file.url} alt="heart" className="front-image"></img>
       </div>
     }
     </div>

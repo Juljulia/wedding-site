@@ -4,8 +4,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Card from "../../components/Card";
 import styled from "styled-components";
 
-
-const StyledContainer= styled.div`
+const StyledContainer = styled.div`
   width: 1000px;
   display: flex;
   flex-wrap: wrap;
