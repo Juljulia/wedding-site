@@ -4,15 +4,8 @@ import client from "../../functions/contentful";
 
 
 const FooterStyled = styled.footer`
-    width: 100vw;
     height: 350px;
-
-    div {
-        position: relative;
-        bottom: 0;
-        height: 350px;
-    }
-
+    
     img {
         width: 100%;
         height: 100%;

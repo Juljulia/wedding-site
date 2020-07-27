@@ -3,8 +3,7 @@ import styled from "styled-components";
 import client from "../../functions/contentful";
 
 
-const HeaderStyled = styled.section`
-    width: 100vw;
+const HeaderStyled = styled.header`
     height: 350px;
 
     div {
@@ -26,6 +25,18 @@ const HeaderStyled = styled.section`
         width: 100%;
         height: 100%;
         object-fit: scale-down;
+    }
+
+    @media (max-width: 650px) {
+        h1 {
+            font-size: 54px;
+            margin-bottom: 10px;
+        }
+        
+        img {
+           object-fit: contain;
+           margin-top: -50px;
+        }
     }
 `;
 
